@@ -1,22 +1,39 @@
+// import java.util.Scanner;
+
+// public class App {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         System.out.print("Enter your age: ");
+//         int age = scanner.nextInt();
+//         System.out.println("Hello, your age is " + age + "!");
+        
+//         boolean hasDl = true; // Declared to fix the missing variable error
+
+//         if (age >= 18) {
+//             System.out.println("You are an adult.");
+//             if (hasDl) {
+//                 System.out.println("You can drive.");
+//             }
+//         } else {
+//             System.out.println("You are a minor.");
+//         }
+//         scanner.close();
+//     }
+// }
+
 import java.util.Scanner;
 
-public class App {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
-        System.out.println("Hello, your age is " + age + "!");
-        
-        boolean hasDl = true; // Declared to fix the missing variable error
-
-        if (age >= 18) {
-            System.out.println("You are an adult.");
-            if (hasDl) {
-                System.out.println("You can drive.");
-            }
-        } else {
-            System.out.println("You are a minor.");
-        }
-        scanner.close();
+public class Numbers{
+    public static void main(String[]args){
+    int n = 123;
+    int rev = 0 ;
+    while(n>0){
+        int digit=n%10;
+        rev=rev*10+digit;
+        n=n/10;
     }
+        System.out.println(rev);
+    
 }
+}
+
