@@ -37,19 +37,29 @@
 // }
 // }
 
-public class Main {
+// public class Main {
+//   public static void main (String[]args){
+//     int a = 1 ;
+//     int b = 2 ;
+//     System.out.println(a);
+//     System.out.println(b);
+//     int t;
+//     t=a;
+//     a=b;
+//     b=t;
+//     System.out.println(" after swapping " );
+//     System.out.println( a);
+//     System.out.println( b);
+//   }
+// }
+
+public class Main{
   public static void main (String[]args){
-    int a = 1 ;
-    int b = 2 ;
-    System.out.println(a);
-    System.out.println(b);
-    int t;
-    t=a;
-    a=b;
-    b=t;
-    System.out.println(" after swapping " );
-    System.out.println( a);
-    System.out.println( b);
+    int a = 20;
+    int b = 100;
+    int product = a * b ; 
+    System.out.println(product);
   }
 }
+
 
