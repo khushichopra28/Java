@@ -21,19 +21,35 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Numbers{
-    public static void main(String[]args){
-    int n = 123;
-    int rev = 0 ;
-    while(n>0){
-        int digit=n%10;
-        rev=rev*10+digit;
-        n=n/10;
-    }
-        System.out.println(rev);
+// public class Numbers{
+//     public static void main(String[]args){
+//     int n = 123;
+//     int rev = 0 ;
+//     while(n>0){
+//         int digit=n%10;
+//         rev=rev*10+digit;
+//         n=n/10;
+//     }
+//         System.out.println(rev);
     
-}
+// }
+// }
+
+public class Main {
+  public static void main (String[]args){
+    int a = 1 ;
+    int b = 2 ;
+    System.out.println(a);
+    System.out.println(b);
+    int t;
+    t=a;
+    a=b;
+    b=t;
+    System.out.println(" after swapping " );
+    System.out.println( a);
+    System.out.println( b);
+  }
 }
 
