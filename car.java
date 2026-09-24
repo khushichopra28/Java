@@ -115,21 +115,45 @@
 //     }
 // }
 
-public class car{
+// public class car{
+//     public static void main(String[]args){
+//         String arr[]={"honda","toyota","ford"};
+//         boolean found=false;
+//         for(int i=0;i<arr.length;i++){
+//             if(arr[i].equals ("honda")){
+//                 if(found = true){
+//                     break;
+//                 }}}
+//                 if (found==true){
+//                 System.out.println("Found");
+//             }
+            
+//             else{
+//                 System.out.println("Not Found");
+//             }
+//         }
+//     }
+
+public class number{
     public static void main(String[]args){
-        String arr[]={"honda","toyota","ford"};
-        boolean found=false;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i].equals ("honda")){
-                if(found = true){
-                    break;
-                }}}
-                if (found==true){
+        int size=20;
+        int arr[]=new int[size];
+        boolean found = false;
+        for (int i=0; i < arr.length;i++)   {
+            arr[i]=20+i;
+            System.out.println(arr[i]);
+        
+        if ( arr[i]==37){
+           if (found = true){
+                break;
+            }}}
+            if(found==true){
+                
                 System.out.println("Found");
             }
-            
             else{
                 System.out.println("Not Found");
             }
+        
         }
-    }
+}
