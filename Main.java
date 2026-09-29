@@ -258,24 +258,48 @@
 //         System.out.println("largest is " + largest);
 //     }
 // } sc.close();
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String[]args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("size of array");
+//             int n = sc.nextInt();
+//             int arr[]= new int [n];
+//             System.out.println("enter the elements");
+//             for(int i = 0 ; i<n; i++){
+//                 arr[i]=sc.nextInt();
+//             }
+//             int smallest = arr[0];
+//             for(int i = 0 ; i<n;i++){
+//                 if( arr[i]<smallest){
+//                     smallest=arr[i];
+//                 }
+//             }
+//             System.out.println("the smallest number is "+smallest);
+//             sc.close();        
+//     }
+// }
+
 import java.util.Scanner;
 public class Main{
     public static void main(String[]args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("size of array");
-            int n = sc.nextInt();
-            int arr[]= new int [n];
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter size of array");
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
             System.out.println("enter the elements");
-            for(int i = 0 ; i<n; i++){
-                arr[i]=sc.nextInt();
-            }
-            int smallest = arr[0];
-            for(int i = 0 ; i<n;i++){
-                if( arr[i]<smallest){
-                    smallest=arr[i];
-                }
-            }
-            System.out.println("the smallest number is "+smallest);
-            sc.close();        
+            arr[i]= sc.nextInt();
+            
+        }
+
+        int sum = 0;
+        for(int i = 0 ; i <n ; i++){
+            sum = sum + arr[i];
+        }
+        System.out.println("THE SUM OF ALL ELEMENTS" + sum);
+         sc.close();
     }
+   
 }
+
